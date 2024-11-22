@@ -12,9 +12,10 @@ import { CartService } from 'src/app/services/cart.service';
 export class CartComponent implements OnInit {
   cart: Training[] = [];
   total: number = 0;
+  showLoginMessage = false;
 
   constructor(
-    private authService: AuthenticateService,
+    public authService: AuthenticateService,
     private cartService: CartService,
     private router: Router
   ) {}
@@ -31,10 +32,10 @@ export class CartComponent implements OnInit {
   }
 
   onAddOrder(): void {
+    this.showLoginMessage = true;
+
     if (this.authService.isLoggedIn()) {
       this.router.navigateByUrl('customer');
-    } else {
-      this.router.navigateByUrl('login');
     }
   }
 }

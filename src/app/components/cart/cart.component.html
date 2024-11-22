@@ -33,8 +33,13 @@
           </td>
         </tr>
       </ng-container>
+
       <ng-template #cartEmpty>
         <p class="alert alert-dark">Votre panier est vide !</p>
+      </ng-template>
+
+      <ng-template [ngIf]="!authService.isLoggedIn() && showLoginMessage">
+        <p class="text-danger">Veuillez vous connecter pour passer commande</p>
       </ng-template>
     </tbody>
   </table>
