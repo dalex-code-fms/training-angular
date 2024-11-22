@@ -1,0 +1,24 @@
+<div class="container">
+  <form [formGroup]="updateForm" (ngSubmit)="onSubmit(updateForm)">
+    <div class="form-group">
+      <label class="control-label">Id : </label>
+      <input
+        type="text"
+        formControlName="id"
+        class="form-control"
+        [attr.disabled]="true"
+      />
+
+      <label class="control-label">Email : </label>
+      <input type="email" formControlName="email" class="form-control" />
+
+      <label class="control-label">Password : </label>
+      <input type="text" formControlName="password" class="form-control" />
+
+      <label class="control-label">Rôle : </label>
+      <input type="text" formControlName="role" class="form-control" />
+
+      <button class="btn btn-success">Valider</button>
+    </div>
+  </form>
+</div>

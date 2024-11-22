@@ -1,0 +1,40 @@
+<div class="container d-flex flex-column">
+  <h1 class="align-self-center">Résume de la commande</h1>
+  <div>
+    <article>
+      <p>Prénom : {{ customer.name }}</p>
+      <p>Nom : {{ customer.firstName }}</p>
+      <p>Address : {{ customer.address }}</p>
+      <p>Téléfone : {{ customer.phone }}</p>
+      <p>email : {{ customer.email }}</p>
+    </article>
+    <article class="d-flex flex-column">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>DESCRIPTION</th>
+            <th>QUANTITY</th>
+            <th>PRIX</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let training of cart">
+            <td>{{ training.id }}</td>
+            <td>{{ training.description }}</td>
+            <td>{{ training.quantity }}</td>
+            <td>{{ training.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="align-self-end">Total : {{ total }} €</p>
+    </article>
+  </div>
+
+  <a class="btn btn-success" (click)="onValidate()">Valider</a>
+</div>
+
+<app-modal-order *ngIf="showModal" [title]="modalTitle" (click)="onModalClose()"
+  ><p>{{ modalContent }}</p>
+  <pre>Montant total : {{ modalData }}</pre>
+</app-modal-order>

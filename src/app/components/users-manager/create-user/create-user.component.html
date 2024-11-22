@@ -1,0 +1,17 @@
+<div class="forms-group">
+  <h2>Creation d'utilisateur</h2>
+  <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label class="control-label">Email : </label>
+      <input type="email" formControlName="email" class="form-control" />
+
+      <label class="control-label">Mot de Pass : </label>
+      <input type="text" formControlName="password" class="form-control" />
+
+      <label class="control-label">Rôle : </label>
+      <input type="text" formControlName="role" class="form-control" />
+
+      <button type="submit" class="btn btn-success">valider</button>
+    </div>
+  </form>
+</div>

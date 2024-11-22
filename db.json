@@ -1,0 +1,90 @@
+{
+  "trainings": [
+    {
+      "id": 3,
+      "name": "Python",
+      "description": "Formation Python/Django 10 jours",
+      "price": "2000",
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "name": "React",
+      "description": "Formation React.js pour débutants sur 21 jours",
+      "price": "10000",
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "name": "SQL",
+      "description": "Formation SQL - Bases de données relationnelles sur 3 jours",
+      "price": 800,
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "name": "Cloud Computing",
+      "description": "Formation sur les services Cloud (AWS, Azure, GCP) sur 6 jours",
+      "price": 2000,
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "name": "DevOps",
+      "description": "Formation DevOps sur les outils CI/CD et la gestion de l'infrastructure sur 5 jours",
+      "price": 1600,
+      "quantity": 1
+    },
+    {
+      "id": 9,
+      "name": "Kubernetes",
+      "description": "Formation Kubernetes pour la gestion des containers sur 4 jours",
+      "price": 1400,
+      "quantity": 1
+    },
+    {
+      "id": 11,
+      "name": "UI/UX Design",
+      "description": "Formation en design d'interfaces utilisateur et expérience utilisateur sur 4 jours",
+      "price": 1200,
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "name": "Cybersecurity",
+      "description": "Formation en cybersécurité et protection des données sur 5 jours",
+      "price": 1500,
+      "quantity": 1
+    },
+    {
+      "id": 13,
+      "name": "MAchine Learning",
+      "description": "aprendre à une IA comment être un humain",
+      "price": "100000",
+      "quantity": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": "123",
+      "role": [
+        "admin",
+        "user"
+      ]
+    },
+    {
+      "id": 2,
+      "email": "user@user.com",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "email": "david@fms.fr",
+      "password": "123",
+      "role": "admin"
+    }
+  ]
+}

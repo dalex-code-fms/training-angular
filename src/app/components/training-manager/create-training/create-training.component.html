@@ -1,0 +1,17 @@
+<div class="forms-group">
+  <h2>Creation de Formation</h2>
+  <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label class="control-label">Nom : </label>
+      <input type="text" formControlName="name" class="form-control" />
+
+      <label class="control-label">Description : </label>
+      <input type="text" formControlName="description" class="form-control" />
+
+      <label class="control-label">Prix : </label>
+      <input type="text" formControlName="price" class="form-control" />
+
+      <button type="submit" class="btn btn-success">valider</button>
+    </div>
+  </form>
+</div>
