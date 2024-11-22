@@ -34,9 +34,15 @@ export class OrderComponent implements OnInit {
   }
 
   onModalClose(): void {
+    const keys = Object.keys(localStorage);
+
+    keys.forEach((key) => {
+      if (key != 'role') {
+        localStorage.removeItem(key);
+      }
+    });
+
     this.showModal = false;
-    this.cartService.clearStorage();
     this.router.navigateByUrl('');
-    console.log('Back to the future !');
   }
 }
