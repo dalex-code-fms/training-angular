@@ -46,6 +46,8 @@ export class LoginComponent implements OnInit {
         form.value.password,
         this.listUsers
       );
+
+      this.router.navigateByUrl('');
     }
   }
 }

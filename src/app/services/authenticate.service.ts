@@ -18,11 +18,9 @@ export class AuthenticateService {
     if (user.role.includes('admin')) {
       this.loggedIn = true;
       localStorage.setItem('role', 'admin');
-      this.router.navigateByUrl('customer');
     } else {
       this.loggedIn = true;
       localStorage.setItem('role', 'user');
-      this.router.navigateByUrl('customer');
     }
   }
 
